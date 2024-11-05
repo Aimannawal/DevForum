@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/img/logo/logo-kotak-white.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen flex items-center justify-center p-4">
-    <div class="w-full max-w-md">
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen flex items-center justify-center p-4" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+    <div class="w-full max-w-md" data-aos="fade-up">
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-8 text-white">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-8 text-white" data-aos="fade-down">
                 <h1 class="text-3xl font-bold mb-2">Register</h1>
                 <p class="text-blue-100">Create your account to get started</p>
             </div>
             <div class="p-8">
-                <form method="POST" action="{{ route('register') }}" class="space-y-6">
+                <form method="POST" action="{{ route('register') }}" class="space-y-6" data-aos="fade-in">
                     @csrf
                     <div class="space-y-2">
                         <label for="name" class="text-sm font-medium text-gray-700 flex items-center">
@@ -78,7 +80,7 @@
                         Register
                     </button>
                     @if ($errors->any())
-                        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mt-4">
+                        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mt-4" role="alert" data-aos="fade-right">
                             <strong>{{ $errors->first() }}</strong>
                         </div>
                     @endif
@@ -92,5 +94,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

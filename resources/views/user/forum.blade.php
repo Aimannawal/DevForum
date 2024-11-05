@@ -57,15 +57,18 @@
             height: auto;
             object-fit: contain;
         }
+
         .custom-blue-bg {
-        background-color: #4361CE;
-    }
-    .custom-blue-bg:hover {
-        background-color: #3651B7;
-    }
-    .custom-blue-ring {
-        --tw-ring-color: #4361CE;
-    }
+            background-color: #4361CE;
+        }
+
+        .custom-blue-bg:hover {
+            background-color: #3651B7;
+        }
+
+        .custom-blue-ring {
+            --tw-ring-color: #4361CE;
+        }
     </style>
 </head>
 <div id="loading-overlay" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
