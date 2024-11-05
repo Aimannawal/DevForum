@@ -51,12 +51,17 @@
         <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
             <div class="px-4 py-5 sm:px-6">
                 <h1 class="text-3xl font-bold text-gray-900">{{ $question->title }}</h1>
+                <img class="w-full h-auto rounded-lg mt-4" 
+                     src="{{ Storage::url($question->image) }}" 
+                     alt="Question Image">
                 <div class="mt-2 flex items-center text-sm text-gray-500">
                     <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                             clip-rule="evenodd"></path>
                     </svg>
-                    Asked by {{ $question->user->name }}
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span>Asked by {{ $question->user->name }}</span>
+                    </div>                    
                     <span class="mx-2">•</span>
                     <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
@@ -66,6 +71,7 @@
                     {{ $question->created_at->diffForHumans() }}
                 </div>
             </div>
+            
             <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
                 <p class="text-gray-700">{{ $question->body }}</p>
             </div>

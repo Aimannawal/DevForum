@@ -25,9 +25,25 @@ Route::get('/chat-ai', function () {
     return view('user.DevAi');
 })->middleware('auth')->name('user.DevAi');
 
-Route::get('/React', function () {
+Route::get('/AOS', function () {
     return view('user.aos');
-})->name('user.detail');
+});
+
+Route::get('/Laravel', function () {
+    return view('user.laravel');
+});
+
+Route::get('/Tailwind', function () {
+    return view('user.tailwind');
+});
+
+Route::get('/SweetAlert2', function () {
+    return view('user.sweetalert2');
+});
+
+Route::get('/Redux', function () {
+    return view('user.redux');
+});
 
 Route::get('/detail_forum', function () {
     return view('user.detail_forum');

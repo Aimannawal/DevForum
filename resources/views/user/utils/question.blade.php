@@ -35,7 +35,7 @@
                  <p class="text-blue-100">Bagikan pertanyaan Anda dengan komunitas kami</p>
              </div>
              <div class="p-8">
-                 <form action="{{ route('questions.store') }}" method="POST" class="space-y-6">
+                 <form action="{{ route('questions.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                      @csrf
                      <div class="space-y-2">
                          <label for="title" class="text-sm font-medium text-gray-700 flex items-center">
@@ -82,6 +82,19 @@
                              class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 transition duration-200"
                              placeholder="Jelaskan pertanyaan Anda secara detail..." required></textarea>
                      </div>
+
+                     <div class="space-y-2">
+                        <label for="image" class="text-sm font-medium text-gray-700 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 3H3v12h12V3zm0 0l4 4M7 10h4m-2-2v4" />
+                            </svg>
+                            Upload Gambar (Opsional)
+                        </label>
+                        <input type="file" name="image" id="image"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 transition duration-200">
+                    </div>
+                    
 
                      <div class="flex items-center justify-between pt-4">
                          <a href="/forum"

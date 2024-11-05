@@ -163,19 +163,10 @@
                                         'bg-yellow-100 text-yellow-800': package.category === 'Mobile',
                                         'bg-red-100 text-red-800': package.category === 'DevOps',
                                         'bg-indigo-100 text-indigo-800': package.category === 'Database',
-                                        'bg-pink-100 text-pink-800': package.category === 'AI/ML',
-                                        'bg-cyan-100 text-cyan-800': package.category === 'Cloud',
-                                        'bg-orange-100 text-orange-800': package.category === 'Security',
-                                        'bg-lime-100 text-lime-800': package.category === 'IoT',
-                                        'bg-teal-100 text-teal-800': package.category === 'Data Science',
-                                        'bg-fuchsia-100 text-fuchsia-800': package.category === 'UI/UX',
-                                        'bg-amber-100 text-amber-800': package.category === 'Game Development',
-                                        'bg-emerald-100 text-emerald-800': package.category === 'Blockchain'
                                     }"
                                     x-text="package.category">
                                 </span>
-                                <a :href="package.name"
-                                    class="flex items-center text-primary">
+                                <a :href="package.name" class="flex items-center text-primary">
                                     <span class="text-sm font-medium">Learn more</span>
                                     <svg class="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                         fill="currentColor" aria-hidden="true">
@@ -211,89 +202,36 @@
                 categories: ['Frontend', 'Backend', 'Full Stack', 'Mobile', 'DevOps', 'Database', 'AI/ML', 'Cloud',
                     'Security', 'IoT', 'Data Science', 'UI/UX', 'Game Development', 'Blockchain'
                 ],
-                allPackages: [{
-                        name: "React",
-                        description: "A JavaScript library for building user interfaces",
-                        category: "Frontend",
-                        image: "/assets/img/package/React.png"
-                    },
+                allPackages: [
+                    // {
+                    //     name: "AOS",
+                    //     description: "Animate on Scroll Library",
+                    //     category: "Frontend",
+                    //     image: "/assets/img/package/AOS.png"
+                    // },
                     {
-                        name: "Vue.js",
-                        description: "The Progressive JavaScript Framework",
-                        category: "Frontend",
-                        image: "/assets/img/package/Vue.png"
-                    },
-                    {
-                        name: "Angular",
-                        description: "One framework. Mobile & desktop.",
-                        category: "Frontend",
-                        image: "/assets/img/package/Angular.png"
-                    },
-                    {
-                        name: "Node.js",
-                        description: "JavaScript runtime built on Chrome's V8 JavaScript engine",
+                        name: "Laravel",
+                        description: "A PHP framework for web artisans",
                         category: "Backend",
-                        image: "/placeholder.svg?height=200&width=200"
+                        image: "/assets/img/package/Laravel.png"
                     },
                     {
-                        name: "Django",
-                        description: "The web framework for perfectionists with deadlines",
-                        category: "Backend",
-                        image: "/placeholder.svg?height=200&width=200"
+                        name: "Tailwind",
+                        description: "A utility-first CSS framework",
+                        category: "Frontend",
+                        image: "/assets/img/package/Tailwind.png"
                     },
+                    // {
+                    //     name: "SweetAlert2",
+                    //     description: "A beautiful, responsive, customizable alert library",
+                    //     category: "Frontend",
+                    //     image: "/assets/img/package/SweetAlert2.png"
+                    // },
                     {
-                        name: "Ruby on Rails",
-                        description: "A web-application framework that includes everything needed to create database-backed web applications",
-                        category: "Backend",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "Next.js",
-                        description: "The React Framework for Production",
-                        category: "Full Stack",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "Flutter",
-                        description: "Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase",
-                        category: "Mobile",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "Docker",
-                        description: "Empowering App Development for Developers",
-                        category: "DevOps",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "Kubernetes",
-                        description: "Production-Grade Container Orchestration",
-                        category: "DevOps",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "PostgreSQL",
-                        description: "The World's Most Advanced Open Source Relational Database",
-                        category: "Database",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "MongoDB",
-                        description: "The database for modern applications",
-                        category: "Database",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "TensorFlow",
-                        description: "An end-to-end open source machine learning platform",
-                        category: "AI/ML",
-                        image: "/placeholder.svg?height=200&width=200"
-                    },
-                    {
-                        name: "PyTorch",
-                        description: "An open source machine learning framework",
-                        category: "AI/ML",
-                        image: "/placeholder.svg?height=200&width=200"
+                        name: "Redux",
+                        description: "A Predictable State Container for JavaScript Apps",
+                        category: "Frontend",
+                        image: "/assets/img/package/Redux.png"
                     }
                 ],
                 filteredPackages: [],

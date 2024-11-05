@@ -35,9 +35,11 @@
             </div>
 
             <div class="p-8">
-                <form action="{{ route('questions.update', $question->id) }}" method="POST" class="space-y-6">
+                <form action="{{ route('questions.update', $question->id) }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                     @csrf
                     @method('PUT')
+
+                    <!-- Title Field -->
                     <div class="space-y-2">
                         <label for="title" class="text-sm font-medium text-gray-700 flex items-center">
                             <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor"
@@ -51,6 +53,8 @@
                             class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 transition duration-200"
                             placeholder="Enter your question title..." required>
                     </div>
+
+                    <!-- Body Field -->
                     <div class="space-y-2">
                         <label for="body" class="text-sm font-medium text-gray-700 flex items-center">
                             <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor"
@@ -65,6 +69,29 @@
                             placeholder="Make changes to your question..." required>{{ old('body', $question->body) }}</textarea>
                     </div>
 
+                    <!-- Image Upload Field -->
+                    <div class="space-y-2">
+                        <label for="image" class="text-sm font-medium text-gray-700 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 3H3v12h12V3zm0 0l4 4M7 10h4m-2-2v4" />
+                            </svg>
+                            Upload New Image (Optional)
+                        </label>
+                        <input type="file" name="image" id="image"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 transition duration-200">
+                        
+                        <!-- Show current image if exists -->
+                        @if ($question->image)
+                            <div class="mt-4">
+                                <p class="text-gray-500 text-sm mb-2">Current Image:</p>
+                                <img src="{{ asset('storage/' . $question->image) }}" alt="Question Image"
+                                    class="w-48 h-auto rounded-lg shadow-md">
+                            </div>
+                        @endif
+                    </div>
+
+                    <!-- Form Buttons -->
                     <div class="flex items-center justify-between pt-4">
                         <a href="{{ route('questions.index') }}"
                             class="text-gray-600 hover:text-primary transition duration-200 flex items-center">

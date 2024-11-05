@@ -119,7 +119,7 @@
                     </a>
                     <div class="pt-2 space-y-2">
                         <a href="/login"
-                            class="block px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 font-medium">
+                             class="block px-4 py-2 text-center bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium">
                             Login
                         </a>
                         <a href="/register"
@@ -280,18 +280,21 @@
         });
 
         document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                closeMobileMenu();
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+    link.addEventListener('click', (e) => {
+        closeMobileMenu();
+        if (window.location.pathname.includes('/login')) {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
 
         const splashScreen = document.getElementById('splash-screen');
         setTimeout(function() {
