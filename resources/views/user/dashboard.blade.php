@@ -174,7 +174,7 @@
                                     }"
                                     x-text="package.category">
                                 </span>
-                                <a :href="'/package-detail?name=' + package.name"
+                                <a :href="package.name"
                                     class="flex items-center text-primary">
                                     <span class="text-sm font-medium">Learn more</span>
                                     <svg class="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"

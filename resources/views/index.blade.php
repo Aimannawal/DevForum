@@ -254,13 +254,11 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const header = document.querySelector('header');
 
-        // Function to close the mobile menu
         function closeMobileMenu() {
             mobileMenu.classList.add('hidden');
             mobileMenu.classList.remove('menu-open');
         }
 
-        // Toggle mobile menu
         menuToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             mobileMenu.classList.toggle('hidden');
@@ -271,24 +269,19 @@
             }
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!header.contains(e.target)) {
                 closeMobileMenu();
             }
         });
 
-        // Prevent clicks inside the menu from closing it
         mobileMenu.addEventListener('click', (e) => {
             e.stopPropagation();
         });
 
-        // Close menu when a link is clicked
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', (e) => {
                 closeMobileMenu();
-                
-                // Smooth scroll to the target section
                 e.preventDefault();
                 const target = document.querySelector(link.getAttribute('href'));
                 if (target) {
@@ -300,14 +293,9 @@
             });
         });
 
-        // Splash screen logic
         const splashScreen = document.getElementById('splash-screen');
-        
-        // Hide splash screen after 2 seconds
         setTimeout(function() {
             splashScreen.classList.add('opacity-0');
-            
-            // Remove splash screen from DOM after fade out
             setTimeout(function() {
                 splashScreen.remove();
             }, 500);

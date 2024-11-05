@@ -25,7 +25,7 @@ Route::get('/chat-ai', function () {
     return view('user.DevAi');
 })->middleware('auth')->name('user.DevAi');
 
-Route::get('/detail', function () {
+Route::get('/React', function () {
     return view('user.aos');
 })->name('user.detail');
 

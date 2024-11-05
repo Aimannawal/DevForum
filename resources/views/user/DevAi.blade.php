@@ -93,7 +93,7 @@
 </head>
 
 <body class="bg-gray-100 h-screen flex flex-col">
-    
+
     <div id="loading-overlay" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
         <div class="loader ease-linear rounded-full h-32 w-32 border-8 border-gray-300 border-t-primary animate-spin">
         </div>
