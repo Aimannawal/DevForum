@@ -217,7 +217,6 @@
             </div>
         </section>
         
-
         <section id="komunitas" class="text-center py-16 bg-white rounded-2xl shadow-xl" data-aos="fade-up" data-aos-duration="600">
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-8" data-aos="fade-up" data-aos-duration="600">Bergabung dengan Komunitas Kami</h2>

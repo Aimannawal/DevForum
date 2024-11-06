@@ -213,25 +213,25 @@
                         name: "Laravel",
                         description: "A PHP framework for web artisans",
                         category: "Backend",
-                        image: "/assets/img/package/Laravel.png"
+                        image: "/assets/img/package/laravel.png"
                     },
                     {
                         name: "Tailwind",
                         description: "A utility-first CSS framework",
                         category: "Frontend",
-                        image: "/assets/img/package/Tailwind.png"
+                        image: "/assets/img/package/tailwind.png"
                     },
-                    // {
-                    //     name: "SweetAlert2",
-                    //     description: "A beautiful, responsive, customizable alert library",
-                    //     category: "Frontend",
-                    //     image: "/assets/img/package/SweetAlert2.png"
-                    // },
+                    {
+                        name: "SweetAlert2",
+                        description: "A beautiful, responsive, customizable alert library",
+                        category: "Frontend",
+                        image: "/assets/img/package/sweetAlert2.png"
+                    },
                     {
                         name: "Redux",
                         description: "A Predictable State Container for JavaScript Apps",
                         category: "Frontend",
-                        image: "/assets/img/package/Redux.png"
+                        image: "/assets/img/package/redux.png"
                     }
                 ],
                 filteredPackages: [],

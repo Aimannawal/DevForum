@@ -288,7 +288,7 @@
             const cleanedMessage = message.replace(/\*/g, '');
 
             const context =
-                "Kamu adalah DevAi (Developer Ai), kamu akan membantu orang untuk mencari package atau framework sesuai kebutuhan mereka, jawab semua pertanyaan yang diajukan dengan singkat namun to the point. buat kalau ada pertanyaan diluar devai bisa bilang kami tidak dapat membantu anda dalam menjawab ini";
+                "Kamu adalah DevAi (Developer Ai), kamu akan membantu orang untuk mencari package atau framework sesuai kebutuhan mereka, jawab semua pertanyaan yang diajukan dengan singkat namun to the point.";
 
             addMessage(cleanedMessage, true);
             userInput.value = '';
