@@ -231,7 +231,7 @@
                         name: "Redux",
                         description: "A Predictable State Container for JavaScript Apps",
                         category: "Frontend",
-                        image: "/assets/img/package/redux.png"
+                        image: "/assets/img/package/Redux.png"
                     }
                 ],
                 filteredPackages: [],
