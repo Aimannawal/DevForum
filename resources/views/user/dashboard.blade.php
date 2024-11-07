@@ -225,7 +225,7 @@
                         name: "SweetAlert2",
                         description: "A beautiful, responsive, customizable alert library",
                         category: "Frontend",
-                        image: "/assets/img/package/sweetAlert2.png"
+                        image: "/assets/img/package/sweetalert2.png"
                     },
                     {
                         name: "Redux",
