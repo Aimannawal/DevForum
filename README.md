@@ -10,10 +10,9 @@
 
 ## Persyaratan
 
-- PHP 8.x
+- PHP 8.2.4^
 - Composer
 - MySQL atau database lain yang didukung Laravel
-- Node.js & NPM (opsional, untuk kebutuhan frontend)
 
 ## Instalasi
 
@@ -22,8 +21,10 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lokal Anda:
 1. **Clone Repositori**
 
    ```bash
-   git clone https://github.com/username/DevForum.git
-   cd DevForum
+   git clone https://github.com/Aimannawal/Festida-Paket-Hemat-Indihome.git
+   ```
+   ```bash
+   cd Festida-Paket-Hemat-Indihome.git
    ```
 
 2. **Instal Dependencies**
@@ -72,12 +73,6 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lokal Anda:
 
    Aplikasi Anda akan berjalan di `http://localhost:8000`.
 
-## Struktur Proyek
-
-- `app/Models`: Model untuk aplikasi, termasuk `User`, `Documentation`, `ForumPost`, `AiQuery`, dll.
-- `app/Http/Controllers`: Controller untuk menangani permintaan HTTP, termasuk dokumentasi, forum, dan DevAi.
-- `database/migrations`: File migrasi database.
-- `database/seeders`: Seeder untuk data awal.
 
 ## Seeder yang Tersedia
 
@@ -89,8 +84,6 @@ Seeder telah disiapkan untuk membuat data awal, termasuk contoh dokumentasi, pos
 2. **Dokumentasi**: Pengguna dapat mengakses, menambah, atau memperbarui dokumentasi untuk berbagai paket atau framework.
 3. **Forum**: Pengguna dapat memposting dan membalas diskusi di forum.
 4. **DevAi**: Pengguna dapat mencari informasi teknis menggunakan fitur DevAi.
-
----
 
 > **Catatan**: Pastikan untuk memeriksa dokumentasi Laravel jika Anda mengalami kendala saat pengembangan.
 ```
