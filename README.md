@@ -84,6 +84,7 @@ Seeder telah disiapkan untuk membuat data awal, termasuk contoh dokumentasi, pos
 2. **Dokumentasi**: Pengguna dapat mengakses, menambah, atau memperbarui dokumentasi untuk berbagai paket atau framework.
 3. **Forum**: Pengguna dapat memposting dan membalas diskusi di forum.
 4. **DevAi**: Pengguna dapat mencari informasi teknis menggunakan fitur DevAi.
+   
+---
 
 > **Catatan**: Pastikan untuk memeriksa dokumentasi Laravel jika Anda mengalami kendala saat pengembangan.
-```
